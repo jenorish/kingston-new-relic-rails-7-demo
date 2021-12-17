@@ -51,6 +51,9 @@ gem "newrelic_rpm"
 # ENV credentials
 gem "dotenv-rails"
 
+# Markdown
+gem "redcarpet"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

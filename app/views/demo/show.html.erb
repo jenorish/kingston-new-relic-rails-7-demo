@@ -26,12 +26,16 @@
                             <p class="leading-normal pt-2">
                                 From your command line run the following:
                                 <br />
-                                <ol>
-                                    <li>1. `rails new demo-app --css tailwind --database postgresql`</li>
-                                    <li>2. `cd demo-app`</li>
-                                    <li>3. `rails db:migrate`</li>
-                                    <li>4. `bundle install`</li>
-                                </ol>
+                                <%= 
+                                    markdown("
+                                        ```bash
+                                            $ rails new demo-app --css tailwind --database postgresql
+                                            $ cd demo-app
+                                            $ rails db:migrate
+                                            $ bundle install
+                                        ```
+                                    ")
+                                %>
                             </p>
                         </div>
                     </div>
@@ -82,11 +86,15 @@
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Add the New Relic Ruby Agent</h2>
                             <p class="leading-normal pt-2">
-                                Add the New Relic Ruby agent to your app by adding the following to your `Gemfile`:
+                                Add the New Relic Ruby agent to your app by adding the following to your Gemfile:
+                                <br /><br />
+                                <%= markdown("`gem 'newrelic_rpm'`") %>
                                 <br />
-                                `gem 'newrelic_rpm'`
+                                Then, run:
+                                <br /><br/>
+                                <%= markdown("`bundle install`") %>
                                 <br />
-                                Then, run `bundle install` from the command line to install it.
+                                from the command line to install it.
                             </p>
                         </div>
                     </div>
