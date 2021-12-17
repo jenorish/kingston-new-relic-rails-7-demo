@@ -1,0 +1,18 @@
+databases:
+  - name: new-relic-rails-7-demo
+    databaseName: new-relic-rails-7-demo
+    user: mysite
+
+services:
+  - type: web
+    name: new-relic-rails-7-demo
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: new-relic-rails-7-demo
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
