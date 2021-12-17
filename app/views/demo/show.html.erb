@@ -1,0 +1,127 @@
+<div class="w-full my-12">
+    <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
+            <div class="bg-white w-full shadow rounded p-8">
+                <h1 class="md:text-3xl text-2xl font-bold text-gray-800">Rails 7.0 + New Relic on Render</h1>
+                <div class="grid grid-cols-1 gap-8 mt-6">
+                    
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-6/12 rounded overflow-hidden">
+                        <%= image_tag("step_1.png", class: "object w-full h-auto") %>
+                        </div>
+                        <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                            <h2 class="text-lg font-semibold leading-tight text-gray-800">Setup Your Ruby on Rails Dev Environment</h2>
+                            <p class="leading-normal pt-2">
+                                Make sure your local environment is set up with Ruby, Rails and all the required dependencies.
+                            </p>
+                            <a class="leading-normal pt-2 hover:underline text-blue-600" href="https://rails.new">You can use the Rails.new script</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-6/12 rounded overflow-hidden">
+                            <%= image_tag("step_2.png", class: "object w-full h-auto") %>
+                        </div>
+                        <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                            <h2 class="text-lg font-semibold leading-tight text-gray-800">Create a New Rails App</h2>
+                            <p class="leading-normal pt-2">
+                                From your command line run the following:
+                                <br />
+                                <ol>
+                                    <li>1. `rails new demo-app --css tailwind --database postgresql`</li>
+                                    <li>2. `cd demo-app`</li>
+                                    <li>3. `rails db:migrate`</li>
+                                    <li>4. `bundle install`</li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-6/12 rounded overflow-hidden">
+                            <%= image_tag("step_3.png", class: "object w-full h-auto") %>
+                        </div>
+                        <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                            <h2 class="text-lg font-semibold leading-tight text-gray-800">Commit to GitHub</h2>
+                            <p class="leading-normal pt-2">
+                                Commit your new Rails app to a GitHub repository. You will need to reference this step later for deployment to Render.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-6/12 rounded overflow-hidden">
+                            <%= image_tag("step_4.png", class: "object w-full h-auto") %>
+                        </div>
+                        <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                            <h2 class="text-lg font-semibold leading-tight text-gray-800">Create a New Relic Account</h2>
+                            <p class="leading-normal pt-2">
+                                It is always free to create a New Relic account. Make sure to save your API credentials and store them in a secure place.
+                            </p>
+                            <a class="leading-normal pt-2 hover:underline text-blue-600" href="https://newrelic.com/signup">Signup for New Relic</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-6/12 rounded overflow-hidden">
+                            <%= image_tag("step_5.png", class: "object w-full h-auto") %>
+                        </div>
+                        <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                            <h2 class="text-lg font-semibold leading-tight text-gray-800">Create a Render Account and Deploy to Render</h2>
+                            <p class="leading-normal pt-2">
+                                We'll use Render to get our web app up online quickly and seamlessly. Follow the steps in the Render signup to connect your new Rails app's GitHub
+                                repository to Render.
+                            </p>
+                            <a class="leading-normal pt-2 hover:underline text-blue-600" href="https://dashboard.render.com/register">Signup for Render</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-6/12 rounded overflow-hidden">
+                            <%= image_tag("step_6.png", class: "object w-full h-auto") %>
+                        </div>
+                        <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                            <h2 class="text-lg font-semibold leading-tight text-gray-800">Add the New Relic Ruby Agent</h2>
+                            <p class="leading-normal pt-2">
+                                Add the New Relic Ruby agent to your app by adding the following to your `Gemfile`:
+                                <br />
+                                `gem 'newrelic_rpm'`
+                                <br />
+                                Then, run `bundle install` from the command line to install it.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-6/12 rounded overflow-hidden">
+                            <%= image_tag("step_7.png", class: "object w-full h-auto") %>
+                        </div>
+                        <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                            <h2 class="text-lg font-semibold leading-tight text-gray-800">Add the New Relic Configuration File</h2>
+                            <p class="leading-normal pt-2">
+                                <ol>
+                                    <li>1. From the <a href="https://docs.newrelic.com/docs/accounts-partnerships/education/getting-started-new-relic/glossary/#account-dropdown">account dropdown</a> in New Relic One, select Account settings.</li>
+                                    <li>2. On the Account settings page, look for the Download a clean configuration file section and click the newrelic.yml file.</li>
+                                    <li>3. Copy the newrelic.yml file into the config sub-directory of your application.</li>
+                                    <li>4. <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/app-naming/name-your-application/">Change the default application name</a> to a meaningful name.</li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-6/12 rounded overflow-hidden">
+                            <%= image_tag("step_8.png", class: "object w-full h-auto") %>
+                        </div>
+                        <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
+                            <h2 class="text-lg font-semibold leading-tight text-gray-800">Explore Your Data</h2>
+                            <p class="leading-normal pt-2">
+                                Navigate to <a href="https://one.newrelic.com">New Relic One</a> and start exploring all your data!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
