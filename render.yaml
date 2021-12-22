@@ -1,11 +1,11 @@
 databases:
-  - name: mysite
+  - name: newrelic_rails7
     databaseName: mysite
-    user: mysite
+    user: newrelic_rails7
 
 services:
   - type: web
-    name: mysite
+    name: newrelic_rails7
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
