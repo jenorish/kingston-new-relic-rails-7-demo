@@ -1,25 +1,68 @@
 <div class="w-full my-12">
     <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8">
             <div class="bg-white w-full shadow rounded p-8">
-                <h1 class="md:text-3xl text-2xl font-bold text-gray-800">Rails 7.0 + New Relic on Render</h1>
+                <div class="bg-purple w-full px-2">
+                    <div class="container mx-auto rounded-t shadow bg-cover bg-bottom m-4">
+                        <%= image_tag("header.png", alt: "Header Image") %>
+                    </div>
+                </div>
                 <div class="grid grid-cols-1 gap-8 mt-6">
                     
                     <div class="flex flex-col md:flex-row">
                         <div class="w-full md:w-6/12 rounded overflow-hidden">
-                        <%= image_tag("step_1.png", class: "object w-full h-auto") %>
+                        <%= image_tag("step_1.png", class: "object w-full h-auto", alt: "Step One") %>
                         </div>
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Setup Your Ruby on Rails Dev Environment</h2>
                             <p class="leading-normal pt-2">
-                                Make sure your local environment is set up with Ruby, Rails and all the required dependencies.
+                                Make sure your local environment is set up with Ruby, Ruby on Rails and all the required dependencies.
                             </p>
-                            <a class="leading-normal pt-2 hover:underline text-blue-600" href="https://rails.new">You can use the Rails.new script</a>
+                            <a class="leading-normal pt-2 hover:underline text-blue-600" href="https://rails.new">
+                                You can use the Rails.new script to get up and running in less than 10 minutes on your machine.
+                            </a>
+                            <div class="flex w-full">
+                            <button
+                                type="submit"
+                                class="
+                                    flex
+                                    mt-2
+                                    items-center
+                                    justify-center
+                                    focus:outline-none
+                                    text-white text-sm
+                                    sm:text-base
+                                    bg-blue-500
+                                    hover:bg-blue-600
+                                    rounded-2xl
+                                    py-2
+                                    w-full
+                                    transition
+                                    duration-150
+                                    ease-in
+                                "
+                            >
+                            <span class="mr-2 uppercase"><a href="https://rails.new">Get Rails</a></span>
+                            <span>
+                                <svg
+                                    class="h-6 w-6"
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </span>
+                            </button>
+                        </div>
                         </div>
                     </div>
 
                     <div class="flex flex-col md:flex-row">
                         <div class="w-full md:w-6/12 rounded overflow-hidden">
-                            <%= image_tag("step_2.png", class: "object w-full h-auto") %>
+                            <%= image_tag("step_2.png", class: "object w-full h-auto", alt: "Step Two") %>
                         </div>
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Create a New Rails App</h2>
@@ -42,7 +85,7 @@
 
                     <div class="flex flex-col md:flex-row">
                         <div class="w-full md:w-6/12 rounded overflow-hidden">
-                            <%= image_tag("step_3.png", class: "object w-full h-auto") %>
+                            <%= image_tag("step_3.png", class: "object w-full h-auto", alt: "Step Three") %>
                         </div>
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Commit to GitHub</h2>
@@ -54,20 +97,56 @@
 
                     <div class="flex flex-col md:flex-row">
                         <div class="w-full md:w-6/12 rounded overflow-hidden">
-                            <%= image_tag("step_4.png", class: "object w-full h-auto") %>
+                            <%= image_tag("step_4.png", class: "object w-full h-auto", alt: "Step Four") %>
                         </div>
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Create a New Relic Account</h2>
                             <p class="leading-normal pt-2">
                                 It is always free to create a New Relic account, and will remain free forever.
                             </p>
-                            <a class="leading-normal pt-2 hover:underline text-blue-600" href="https://newrelic.com/signup">Signup for New Relic</a>
+                            <div class="flex w-full">
+                                <button
+                                    type="submit"
+                                    class="
+                                        flex
+                                        mt-2
+                                        items-center
+                                        justify-center
+                                        focus:outline-none
+                                        text-white text-sm
+                                        sm:text-base
+                                        bg-blue-500
+                                        hover:bg-blue-600
+                                        rounded-2xl
+                                        py-2
+                                        w-full
+                                        transition
+                                        duration-150
+                                        ease-in
+                                    "
+                                >
+                                <span class="mr-2 uppercase"><a href="https://newrelic.com/signup">Sign Up</a></span>
+                                <span>
+                                    <svg
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </span>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     <div class="flex flex-col md:flex-row">
                         <div class="w-full md:w-6/12 rounded overflow-hidden">
-                            <%= image_tag("step_5.png", class: "object w-full h-auto") %>
+                            <%= image_tag("step_5.png", class: "object w-full h-auto", alt: "Step Five") %>
                         </div>
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Create a Render Account and Deploy to Render</h2>
@@ -75,13 +154,49 @@
                                 We'll use Render to get our web app up online quickly and seamlessly. Follow the steps in the Render signup to connect your new Rails app's GitHub
                                 repository to Render.
                             </p>
-                            <a class="leading-normal pt-2 hover:underline text-blue-600" href="https://dashboard.render.com/register">Signup for Render</a>
+                            <div class="flex w-full">
+                                <button
+                                    type="submit"
+                                    class="
+                                        flex
+                                        mt-2
+                                        items-center
+                                        justify-center
+                                        focus:outline-none
+                                        text-white text-sm
+                                        sm:text-base
+                                        bg-blue-500
+                                        hover:bg-blue-600
+                                        rounded-2xl
+                                        py-2
+                                        w-full
+                                        transition
+                                        duration-150
+                                        ease-in
+                                    "
+                                >
+                                <span class="mr-2 uppercase"><a href="https://dashboard.render.com/register">Sign Up</a></span>
+                                <span>
+                                    <svg
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </span>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     <div class="flex flex-col md:flex-row">
                         <div class="w-full md:w-6/12 rounded overflow-hidden">
-                            <%= image_tag("step_6.png", class: "object w-full h-auto") %>
+                            <%= image_tag("step_6.png", class: "object w-full h-auto", alt: "Step Six") %>
                         </div>
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Add the New Relic Ruby Agent</h2>
@@ -101,7 +216,7 @@
 
                     <div class="flex flex-col md:flex-row">
                         <div class="w-full md:w-6/12 rounded overflow-hidden">
-                            <%= image_tag("step_7.png", class: "object w-full h-auto") %>
+                            <%= image_tag("step_7.png", class: "object w-full h-auto", alt: "Step Seven") %>
                         </div>
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Add the New Relic Configuration File</h2>
@@ -118,7 +233,7 @@
 
                     <div class="flex flex-col md:flex-row">
                         <div class="w-full md:w-6/12 rounded overflow-hidden">
-                            <%= image_tag("step_8.png", class: "object w-full h-auto") %>
+                            <%= image_tag("step_8.png", class: "object w-full h-auto", alt: "Step Eight") %>
                         </div>
                         <div class="w-full md:w-6/12 mt-4 md:mt-0 md:ml-4">
                             <h2 class="text-lg font-semibold leading-tight text-gray-800">Explore Your Data</h2>
