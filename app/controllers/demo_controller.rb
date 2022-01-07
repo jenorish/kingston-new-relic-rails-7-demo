@@ -4,4 +4,8 @@ class DemoController < ApplicationController
 
   def show
   end
+
+  def error
+    DoesntExist.do_something
+  end
 end
