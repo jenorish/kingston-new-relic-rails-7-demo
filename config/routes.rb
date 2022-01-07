@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "demo#index"
+
+  get "/demo/error", to: "demo#error"
 end
