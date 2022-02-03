@@ -14,7 +14,7 @@
 ![GitHub pull requests closed](https://img.shields.io/github/issues-pr-closed/newrelic-experimental/new-relic-rails-7-demo)
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.txt)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Learn how to integrate the [New Relix Ruby Agent](https://github.com/newrelic/newrelic-ruby-agent) into your Rails 7 web application and deploy it to [Render](https://onrender.com).
 
